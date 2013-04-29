@@ -11,10 +11,12 @@ require_once "getInfo.php";
 <link rel="stylesheet" type="text/css" href="css/home.css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="css/jquery.atwho.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-fileupload.min.css"/>
  <script type="text/javascript" src="js/jquery.js"></script>
  <script type="text/javascript" src="js/jquery.atwho.js"></script>
  <script type="text/javascript" src="js/home.js"></script> 
  <script type="text/javascript" src="js/base.js"></script>
+ <script type="text/javascript" src="js/bootstrap-fileupload.min.js"></script>
   <script type="text/javascript">
    $(function(){
 				$.ajax({
@@ -54,7 +56,7 @@ require_once "getInfo.php";
             <a id="menu2" href="friend.php" class="no_unique menu">好友</a>
             <a id="menu3" href="info.php" class="no_unique menu"><img src="images//head/<?php echo $img_url;?>" alt="commom_head"/></a>
             </div>
-        </div>
+      </div>
 
         <div id="content">
             <div id="sidetext">
@@ -85,7 +87,11 @@ require_once "getInfo.php";
               <p id="title_send">发送状态</p>
               <textarea id="content_send" placeholder="说写什么吧"></textarea><br>
 			  <form action="post_img.php" method="post" enctype="multipart/form-data" target="help_frame">
-				  <input type="file" name="file" id="file_btn" onChange="if(this.value)insertTitle(this.value);" class="btn btn-primary" style="margin-left:50px;"/>
+				  <div class="fileupload fileupload-new" data-provides="fileupload" style="margin-left:50px;">
+            <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" name="file" id="file_btn" onChange="if(this.value)insertTitle(this.value);"/></span>
+            <span class="fileupload-preview"></span>
+            <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+          </div>
 				  <input type="submit" name="submit" class="tip_button" id="post_img_btn" style="margin-top:8px;" value="发布图像"/>
 			  </form>
 			  
