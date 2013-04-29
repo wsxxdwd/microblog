@@ -1,0 +1,44 @@
+.friend_div{
+    margin:25px;
+    border-radius:10px;
+    border:solid 2px lightgray;
+    width:340px;
+    height:124px;
+}
+
+.friend_head_holder{
+    height:90px;
+    width:90px; 
+    border-radius:10px;
+    border:solid 2px #282828;
+    margin:10px 0px 0px 10px;
+}
+
+.friend_head_holder img{
+    height:100%;
+    width:100%;
+    line-height:100%;
+    margin:0px auto;
+}
+
+h.friend_name{
+    display:block;
+    margin:10px 0px 0px 10px;
+    font-size:18px;
+    color:gray;
+}
+
+h.friend_name span{
+    color:#515151;
+}
+
+.friend_tip{
+    width:223px;
+    height:74px;
+    margin:0px 0px 0px 10px;
+}
+
+.friend_tips{
+    margin-top:8px;
+    margin-left:5px;
+}

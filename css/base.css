@@ -1,0 +1,208 @@
+
+h,p,span{
+    margin:0px;
+    padding:0px;
+}
+
+.float_left{
+    float:left;
+}
+
+#content #sidetext #basic_info #info_head{
+    margin:20px 0px 0px 50px;
+    height:160px;
+    width:160px;
+    border:solid 2px #BEBEBE;
+    border-radius:15px;
+}
+
+#content #sidetext #basic_info #info_head img{
+    margin:0 auto;
+    height:100%;
+    line-height:100%;
+}
+
+
+#info_other{
+    padding:20px 0px 0px 20px;
+}
+
+#info_other h{
+    font-size:30px;
+    font-family:"Microsoft YaHei";
+    color:#515151;
+}
+
+#info_other #line{
+    width:150px;
+    margin-top:5px;
+    margin-bottom:0px;
+}
+
+.tip_btns{
+    margin-top:10px
+}
+
+#send_baike #title_send{
+    margin:80px 0px 0px 50px;
+    font-size:20px;
+}
+
+#send_baike #content_send{
+    margin:10px 0px 0px 50px;
+    width:70%;
+    height:200px;
+    resize:none;
+    color:#515151;
+    font-size:18px;
+    padding:10px 0px 0px 10px;
+}
+
+#send_baike #baike_send_btn{
+	float:right;
+    margin:10px 30px 50px 313px;
+	width:60px;
+}
+
+/******baike*********/
+#right #right_head{
+    display:block;
+    margin:20px 0px 0px 20px;
+    font-size:20px;
+    color:#282828;
+}
+
+#right #right_line{
+    color:gray;
+    margin:5px 20px 0px 20px;
+    
+}
+
+.baike_div{
+    border:solid 2px gray;
+    margin:20px 20px 0px 20px;
+    border-radius:15px;
+}
+
+.img_div{
+    width:80px;
+    height:80px;
+    margin:20px 0px 0px 20px;
+    border:solid 2px lightgray;
+    border-radius:5px;
+}
+
+.baike_head{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    line-height:100%;
+    cursor:pointer;
+}
+
+.baike_detail .sender_name{
+    margin:20px 0px 0px 20px;
+    color:#282828;
+    font-family:"Microsoft YaHei";
+    font-size:20px;
+}
+
+.baike_box{
+    width:580px;
+    margin:10px 20px 0px 20px;
+    padding:10px;
+    border:solid 2px lightgray;
+    border-radius:5px;
+    font-size:18px;
+    font-family:"Microsoft YaHei";
+    text-indent:36px;
+    line-height:23px;
+}
+.baike_box img{
+	width:500px;
+}
+
+.send_time{
+    display:block;
+    margin:10px 0px 0px 350px;
+    color:gray;
+}
+
+.baike_fn{
+    padding:10px 0px 10px 0px;
+    float:right;
+    margin-right:20px;
+}
+
+.baike_fn button{
+    margin-left:5px;
+}
+
+/****评论*****/
+.comment_div{
+    width:600px;
+    border:solid 2px lightgray;
+    border-radius:5px;
+    margin:30px 0px 20px 20px;
+    display:none;
+}
+
+.comment_div .head_holder{
+    width:50px;
+    height:50px;
+    border:solid 2px lightgray;
+    border-radius:5px;
+    margin:20px;
+}
+
+.comment_div .head_holder img{
+    height:100%;
+    width:100%;
+    margin:0 auto;
+    line-height:100%;
+}
+
+.comment_div .comment_textbox{
+    width:470px;
+    height:43px;
+    margin-top:20px;
+    resize:none;
+}
+
+.comment_div .send_comment{
+    float:right;
+    margin-bottom:10px;
+}
+
+.comment_div .comment_name{
+    margin-top:20px;
+    color:#515151;
+    font-size:20px;
+    display:block;
+}
+
+.comment_div .comment_p{
+    font-size:15px;
+    color:black;
+    text-indent:30px;
+    width:465px;
+    padding:5px;
+    border:solid 2px lightgray;
+}
+
+.comment_div .comment_time{
+    text-align:right;
+    color:#282828;
+}
+
+/*****关注*****/
+.guanzhu,.no_guanzhu{
+    width:110px;
+    height:30px;
+    margin:10px 0px 0px 78px;
+}
+
+/**退出**/
+.logout{
+    margin:10px 0px 0px 10px;
+}

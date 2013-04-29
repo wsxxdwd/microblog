@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.atwho.css"/>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.atwho.js"></script>
+        <script type="text/javascript">
+        $(function(){
+				$.ajax({
+				type:"POST",
+				url:"at.php",
+				dataType: 'json',
+				data: 5,
+				success: function(data) {
+				$("textarea#inputor").atwho("@",{
+                'data':data,
+                limit:5
+            });
+				}
+			});
+     
+            //var data = ["Jacob","Isabella","Ethan","Emma","Michael","Olivia","Alexander","Sophia","William","Ava","Joshua","Emily","Daniel","Madison","Jayden","lepture","Abigail","Noah","Chloe","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","你好","你你你", "高富帅"
+            //];
+
+            
+
+          //data
+      
+
+        });
+</script>
+<style type="text/css" media="screen">
+body {
+    font: 14px/1.6 "Lucida Grande", "Helvetica", sans-serif;
+}
+.box {
+    background:gray;
+    height:100px;
+    width:100px;
+    margin:10px;
+}
+textarea {
+    width: 300px;
+}
+#inputor{
+    width:480px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+</style>
+</head>
+<body>
+    <button id="reflash">reflash</button>
+    <textarea id="inputor" rows="8" cols="40">
+        this textarea register "@" with static data
+        and ":" with ajax.
+        type "@" to try
+    </textarea>
+</body>
+</html>
