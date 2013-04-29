@@ -9,8 +9,4 @@ $user = mysql_fetch_array($sql);
 $username = $user["username"];
 $msg = $user["msg"];
 $img_url = $user["img"];
-
-$baike_content = $baike["content"];
-$baike_good = $baike["good"];
-$baike_share = $baike["share"];
 ?>
